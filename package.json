@@ -1,0 +1,35 @@
+{
+  "name": "stably",
+  "version": "1.0.0",
+  "main": "./stably.js",
+  "description": "Implement fault tolerance in node js. (Automatic restart, migration, fault notification)",
+  "bin": {
+    "stably": "./bin/stably.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmmhmmhm/stably.git"
+  },
+  "keywords": [
+    "fault-tolerance",
+    "restart",
+    "reboot",
+    "migration",
+    "notification"
+  ],
+  "author": "hmmhmmhm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hmmhmmhm/stably/issues"
+  },
+  "homepage": "https://github.com/hmmhmmhm/stably#readme",
+  "dependencies": {
+    "cancelable-event": "^1.0.2",
+    "folder-logger": "^1.0.0",
+    "fslogger": "^2.0.2",
+    "mkdir-recursive": "^0.4.0",
+    "nodemon": "^1.18.9",
+    "string-error-parse": "^1.0.1",
+    "yargs": "^12.0.5"
+  }
+}
