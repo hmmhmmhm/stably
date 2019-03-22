@@ -50,6 +50,11 @@ const stably = (command, option, program)=>{
     let initTimestamp = new Date().getTime()
     let nodemonOption = cli.parse(`nodemon ${command}`)
 
+    // Additional Exec(ts-node) support
+    let parseExec = command.split(' ')
+    if(parseExec.length >= 2 && (nodemonOption.script == parseExec[1]))
+        nodemonOption.exec = parseExec[0]
+
     if(option.ignore) nodemonOption.ignore = ['*']
     nodemonOption.ext = option.external.split(',').join(' ')
     nodemonOption.stdout = false
