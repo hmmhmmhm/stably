@@ -1,6 +1,6 @@
 {
   "name": "stably",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./stably.js",
   "description": "Implement fault tolerance in node js. (Automatic restart, migration, fault notification)",
   "bin": {
